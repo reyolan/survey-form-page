@@ -1,13 +1,13 @@
 header {
 	width: 100vw;
 	position: fixed;
-	background: white;
+	background: rgba(0, 0, 0, 0.2);
 	padding: 1rem 2rem;
-	// z-index: 1;
-	color: rgb(94, 209, 127);
+	color: rgb(73, 172, 101);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: solid 0.5px;
 
 	img {
 		max-width: 100%;

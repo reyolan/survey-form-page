@@ -1,50 +1,10 @@
-// .outer-wrap {
-// 	width: 100vh;
-// 	height: 100vw;
-// 	scroll-behavior: smooth;
-// 	transform: rotate(-90deg) translateX(-100vh);
-// 	transform-origin: top left;
-// 	overflow-y: scroll;
-// 	overflow-x: hidden;
-// 	position: absolute;
-// 	background-color: rgb(234, 236, 234);
-// 	/* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-// 		url("img/bg-img.jpg") no-repeat fixed;
-// 	background-size: cover; */
-// 	scrollbar-width: none;
-// 	-ms-overflow-style: none;
-// }
-
-// .horizontal-scroll-wrap {
-// 	display: flex;
-// 	width: 600vw;
-// 	transform: rotate(90deg) translateY(-100vh);
-// 	transform-origin: top left;
-// }
-
-// .slide {
-// 	width: 100vw;
-// 	height: 100vh;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// }
-
-// #two {
-// 	background: red;
-// }
-
-// ::-webkit-scrollbar {
-// 	display: none;
-// }
-
-// Temporary CSS
-
-.outer-wrap {
+#outer-wrap {
 	height: 100vh;
 	overflow: hidden;
 	scroll-behavior: smooth;
-	background-color: rgb(234, 236, 234);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+		url("img/bg-img.jpg") no-repeat fixed;
+	background-size: cover;
 }
 
 .slide {
@@ -54,7 +14,3 @@
 	width: 100vw;
 	height: 100vh;
 }
-
-// #two {
-// 	background: red;
-// }

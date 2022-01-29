@@ -8,17 +8,8 @@
 	width: 40vw;
 
 	#description {
-		padding: 3rem;
-		color: rgb(66, 66, 80);
+		padding: 2rem 0;
 		text-align: center;
-	}
-
-	.ask-input {
-		color: rgb(66, 66, 80);
-	}
-
-	label {
-		color: rgb(129, 129, 146);
 	}
 
 	.prev-next-btn {
@@ -38,6 +29,10 @@
 		padding: 0.4rem;
 		width: 100%;
 	}
+
+	textarea {
+		padding: 0.2em;
+	}
 }
 
 #type-fields {
@@ -55,7 +50,6 @@
 
 	input {
 		border: rgb(219, 220, 231) solid 0.1em;
-		color: rgb(27, 27, 28);
 	}
 }
 
@@ -70,7 +64,7 @@ input[type="radio"] {
 	border-color: rgb(222, 225, 232);
 }
 
-#radio-checkbox-container {
+.radio-checkbox-multiline-container {
 	display: flex;
 	flex-direction: column;
 	gap: 0.8rem;

@@ -22,8 +22,16 @@ body header #title {
 .content {
   font-size: 2rem;
 }
+.content #description {
+  color: #424250;
+}
 .content .ask-input {
   font-size: 2rem;
+  color: #424250;
+}
+.content #required-input {
+  font-size: 1rem;
+  color: #424250;
 }
 .content #name,
 .content #email,
@@ -36,20 +44,30 @@ body header #title {
 .content select {
   font-size: 1.4rem;
 }
+.content label[for=comments] {
+  font-size: 1.4rem;
+}
+.content textarea {
+  font-size: 2rem;
+}
+
+#type-fields input {
+  color: #1b1b1c;
+}
 
 label {
-  font-size: 2rem;
+  color: #818192;
 }
 
 .radio-checkbox-div label {
   font-size: 1.8rem;
 }
 
-.button {
+.link-button {
   font-size: 1.5rem;
 }
 
-.button {
+.link-button {
   cursor: pointer;
   background-color: #5ed17f;
   color: white;
@@ -58,30 +76,32 @@ label {
   padding: 0.5em 2.5em;
   margin-top: 3rem;
 }
-.button:hover {
+.link-button:hover {
   opacity: 0.8;
 }
 
 header {
   width: 100vw;
   position: fixed;
-  background: white;
+  background: rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
-  color: #5ed17f;
+  color: #49ac65;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: solid 0.5px;
 }
 header img {
   max-width: 100%;
   width: 40px;
 }
 
-.outer-wrap {
+#outer-wrap {
   height: 100vh;
   overflow: hidden;
   scroll-behavior: smooth;
-  background-color: #eaecea;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("img/bg-img.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
 .slide {
@@ -101,15 +121,8 @@ header img {
   width: 40vw;
 }
 .content #description {
-  padding: 3rem;
-  color: #424250;
+  padding: 2rem 0;
   text-align: center;
-}
-.content .ask-input {
-  color: #424250;
-}
-.content label {
-  color: #818192;
 }
 .content .prev-next-btn {
   display: flex;
@@ -126,6 +139,9 @@ header img {
   padding: 0.4rem;
   width: 100%;
 }
+.content textarea {
+  padding: 0.2em;
+}
 
 #type-fields {
   display: flex;
@@ -141,7 +157,6 @@ header img {
 }
 #type-fields input {
   border: #dbdce7 solid 0.1em;
-  color: #1b1b1c;
 }
 
 .fields {
@@ -155,7 +170,7 @@ input[type=radio] {
   border-color: #dee1e8;
 }
 
-#radio-checkbox-container {
+.radio-checkbox-multiline-container {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;

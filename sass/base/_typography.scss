@@ -17,8 +17,18 @@ body {
 .content {
 	font-size: 2rem;
 
+	#description {
+		color: rgb(66, 66, 80);
+	}
+
 	.ask-input {
 		font-size: 2rem;
+		color: rgb(66, 66, 80);
+	}
+
+	#required-input {
+		font-size: 1rem;
+		color: rgb(66, 66, 80);
 	}
 
 	#name,
@@ -34,16 +44,32 @@ body {
 	select {
 		font-size: 1.4rem;
 	}
+
+	label[for="comments"] {
+		font-size: 1.4rem;
+	}
+
+	textarea {
+		font-size: 2rem;
+	}
+}
+
+#type-fields {
+	input {
+		color: rgb(27, 27, 28);
+	}
 }
 
 label {
-	font-size: 2rem;
+	color: rgb(129, 129, 146);
 }
 
-.radio-checkbox-div label {
-	font-size: 1.8rem;
+.radio-checkbox-div {
+	label {
+		font-size: 1.8rem;
+	}
 }
 
-.button {
+.link-button {
 	font-size: 1.5rem;
 }

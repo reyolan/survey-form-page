@@ -17,7 +17,7 @@
 				<h1 id="title">Customer Form</h1>
 				<img src="img/logo.png" />
 			</header>
-			<div class="outer-wrap">
+			<div id="outer-wrap">
 				<div class="slide" id="one">
 					<div class="content" id="one-content">
 						<p id="description">
@@ -25,9 +25,7 @@
 							improve.
 						</p>
 						<div class="prev-next-btn" id="proceed-btn">
-							<a href="#two">
-								<button type="button" class="button">Proceed</button>
-							</a>
+							<a href="#two" class="link-button">Proceed</a>
 						</div>
 					</div>
 				</div>
@@ -35,6 +33,7 @@
 				<div class="slide" id="two">
 					<div class="content">
 						<p class="ask-input">Please enter your information</p>
+						<p id="required-input">* required field</p>
 						<div id="type-fields">
 							<div class="fields">
 								<label for="name" id="name-label">Name*</label>
@@ -71,12 +70,8 @@
 							</div>
 						</div>
 						<div class="prev-next-btn">
-							<a href="#one">
-								<button type="button" class="button">Back</button>
-							</a>
-							<a href="#three">
-								<button type="button" class="button">Next</button>
-							</a>
+							<a href="#one" class="link-button">Back</a>
+							<a href="#three" class="link-button">Next</a>
 						</div>
 					</div>
 				</div>
@@ -351,99 +346,95 @@
 							</select>
 						</div>
 						<div class="prev-next-btn">
-							<a href="#two">
-								<button type="button" class="button">Back</button>
-							</a>
-							<a href="#four">
-								<button type="button" class="button">Next</button>
-							</a>
+							<a href="#two" class="link-button">Back</a>
+							<a href="#four" class="link-button">Next</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" id="four">
 					<div class="content">
-						<p class="ask-input">Where did you first find our website?</p>
-						<div id="radio-checkbox-container">
+						<p class="ask-input">Where did you buy our product?</p>
+						<div class="radio-checkbox-multiline-container">
 							<div class="radio-checkbox-div">
 								<input type="radio" name="choose" id="radio1" value="rad1" />
-								<label for="radio1">Facebook</label>
+								<label for="radio1">Online</label>
 							</div>
 							<div class="radio-checkbox-div">
 								<input type="radio" name="choose" id="radio2" value="rad2" />
-								<label for="radio2">Twitter</label>
-							</div>
-							<div class="radio-checkbox-div">
-								<input type="radio" name="choose" id="radio3" value="rad3" />
-								<label for="radio3">Instagram</label>
+								<label for="radio2">Retail Store</label>
 							</div>
 						</div>
 
 						<div class="prev-next-btn">
-							<a href="#three">
-								<button type="button" class="button">Back</button>
-							</a>
-							<a href="#five">
-								<button type="button" class="button">Next</button>
-							</a>
+							<a href="#three" class="link-button">Back</a>
+							<a href="#five" class="link-button">Next</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" id="five">
 					<div class="content">
-						<p class="ask-input">Please check all possible conditions.</p>
-						<div id="radio-checkbox-container">
+						<p class="ask-input">Where did you find our website?</p>
+						<div class="radio-checkbox-multiline-container">
 							<div class="radio-checkbox-div">
 								<input
 									type="checkbox"
-									name="drink"
-									id="softdrink"
-									value="softdrinks"
+									name="soc-med"
+									id="facebook"
+									value="facebook"
 								/>
-								<label for="softdrink">Softdrinks</label>
+								<label for="facebook">Facebook</label>
 							</div>
 							<div class="radio-checkbox-div">
 								<input
 									type="checkbox"
-									name="drink"
-									id="coffee"
-									value="coffee"
+									name="soc-med"
+									id="twitter"
+									value="twitter"
 								/>
-								<label for="coffee">Coffee</label>
+								<label for="twitter">Twitter</label>
 							</div>
 							<div class="radio-checkbox-div">
-								<input type="checkbox" name="drink" id="water" value="water" />
-								<label for="water">Water</label>
+								<input
+									type="checkbox"
+									name="soc-med"
+									id="instagram"
+									value="instagram"
+								/>
+								<label for="instagram">Instagram</label>
 							</div>
 						</div>
 
 						<div class="prev-next-btn">
-							<a href="#four">
-								<button type="button" class="button">Back</button>
-							</a>
-							<a href="#six">
-								<button type="button" class="button">Next</button>
-							</a>
+							<a href="#four" class="link-button">Back</a>
+							<a href="#six" class="link-button">Next</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" id="six">
 					<div class="content">
-						<p class="ask-input">Any comments?</p>
-						<label for="comments">Additional Comments: </label>
-						<textarea
-							name="comments"
-							id="comments"
-							rows="5"
-							cols="20"
-						></textarea>
+						<p class="ask-input">
+							Input any thoughts about the product you bought.
+						</p>
+						<div class="radio-checkbox-multiline-container">
+							<label for="comments">Product Review </label>
+							<textarea
+								name="comments"
+								id="comments"
+								rows="4"
+								cols="60"
+							></textarea>
+						</div>
 						<div class="prev-next-btn">
-							<a href="#five">
-								<button type="button" class="button">Back</button>
-							</a>
-							<button type="submit" value="submit" id="submit" class="button">
+							<a href="#five" class="link-button">Back</a>
+							<button
+								type="submit"
+								value="submit"
+								id="submit"
+								class="link-button"
+							>
 								Submit
 							</button>
 						</div>
