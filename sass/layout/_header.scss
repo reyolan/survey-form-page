@@ -1,0 +1,16 @@
+header {
+	width: 100vw;
+	position: fixed;
+	background: white;
+	padding: 1rem 2rem;
+	// z-index: 1;
+	color: rgb(94, 209, 127);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		max-width: 100%;
+		width: 40px;
+	}
+}

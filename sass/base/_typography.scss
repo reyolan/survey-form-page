@@ -1,0 +1,49 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+
+	header {
+		font-size: 1.2rem;
+
+		#title {
+			font-weight: 700;
+		}
+	}
+}
+
+.content {
+	font-size: 2rem;
+
+	.ask-input {
+		font-size: 2rem;
+	}
+
+	#name,
+	#email,
+	#number {
+		font-size: 1.4rem;
+	}
+
+	label[for="dropdown"] {
+		font-size: 1.4rem;
+	}
+
+	select {
+		font-size: 1.4rem;
+	}
+}
+
+label {
+	font-size: 2rem;
+}
+
+.radio-checkbox-div label {
+	font-size: 1.8rem;
+}
+
+.button {
+	font-size: 1.5rem;
+}

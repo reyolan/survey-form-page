@@ -1,0 +1,82 @@
+.content {
+	background-color: white;
+	padding: 3.5rem;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+
+	width: 40vw;
+
+	#description {
+		padding: 3rem;
+		color: rgb(66, 66, 80);
+		text-align: center;
+	}
+
+	.ask-input {
+		color: rgb(66, 66, 80);
+	}
+
+	label {
+		color: rgb(129, 129, 146);
+	}
+
+	.prev-next-btn {
+		display: flex;
+		justify-content: space-between;
+		border-top: solid rgb(229, 229, 229) 0.2rem;
+		flex-wrap: wrap;
+	}
+
+	#proceed-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	select {
+		padding: 0.4rem;
+		width: 100%;
+	}
+}
+
+#type-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	padding: 1.5rem 0 3rem 0;
+
+	#name,
+	#email,
+	#number {
+		height: 3.5rem;
+		padding: 0 0.5rem;
+	}
+
+	input {
+		border: rgb(219, 220, 231) solid 0.1em;
+		color: rgb(27, 27, 28);
+	}
+}
+
+.fields {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+input[type="radio"] {
+	border-color: rgb(222, 225, 232);
+}
+
+#radio-checkbox-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	padding: 2rem 0;
+}
+
+#dropdown-container {
+	padding: 2rem 0;
+}
