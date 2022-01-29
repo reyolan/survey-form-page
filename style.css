@@ -31,22 +31,20 @@ body header #title {
   color: #424250;
 }
 .content #required-input {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #424250;
 }
 .content #name,
 .content #email,
 .content #number {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
-.content label[for=dropdown] {
+.content label[for=dropdown],
+.content label[for=comments] {
   font-size: 1.4rem;
 }
 .content select {
-  font-size: 1.4rem;
-}
-.content label[for=comments] {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .content textarea {
   font-size: 2rem;
@@ -183,6 +181,12 @@ input[type=radio] {
   padding: 2rem 0;
 }
 
+@media screen and (max-width: 732px) {
+  .prev-next-btn {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 body {
   animation: fadeInAnimation ease 0.6s 1;
   animation-fill-mode: forwards;

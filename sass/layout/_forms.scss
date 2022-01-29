@@ -74,3 +74,10 @@ input[type="radio"] {
 #dropdown-container {
 	padding: 2rem 0;
 }
+
+@media screen and (max-width: 732px) {
+	.prev-next-btn {
+		flex-direction: column;
+		align-content: center;
+	}
+}
